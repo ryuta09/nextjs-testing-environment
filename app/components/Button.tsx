@@ -14,6 +14,9 @@ const buttonStyle = tv({
       md: "text-base px-3 px-2",
       lg: "px-4 py-3 text-lg",
     },
+    disabled: {
+      true: 'opacity-50 bg-gray-500 pointer-events-none'
+    }
   },
   compoundVariants: [
     {
@@ -31,8 +34,8 @@ type ButtonVariants = VariantProps<typeof buttonStyle>;
 interface ButtonProps extends ButtonVariants {
   children: React.ReactNode;
 }
-const Button = ({ color, size, children }: ButtonProps) => {
-  return <button className={buttonStyle({ color, size })}>{children}</button>;
+const Button = ({ color, size, disabled, children }: ButtonProps) => {
+  return <button className={buttonStyle({ color, size, disabled })}>{children}</button>;
 };
 
 export default Button;

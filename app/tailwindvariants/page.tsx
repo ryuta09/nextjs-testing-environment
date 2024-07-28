@@ -8,7 +8,7 @@ const TailwindVariants = () => {
       <Button color='secondary' size='lg'>基本</Button>
 
       <div className='flex items-center gap-2 my-4'>
-        <Button color='secondary' size='sm'>secondary</Button>
+        <Button color='secondary' size='sm' disabled={true}>secondary</Button>
         <Button color='primary' size='md'>primary</Button>
         <Button color='success' size='lg'>success</Button>
       </div>
