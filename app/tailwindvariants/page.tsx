@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../components/Button'
 import Alert from '../components/Alert'
 import ReponseSlot from '../components/ReponseSlot'
+import Over from '../components/Over'
 
 const TailwindVariants = () => {
   return (
@@ -36,6 +37,11 @@ const TailwindVariants = () => {
 
       <ReponseSlot color='secondary' />
       <ReponseSlot color='primary' />
+
+      <div className='my-4'>
+        <p>classNameでオーバーライドするパターン</p>
+        <Over color='secondary' className='bg-red-300 hover:bg-red-400' />
+      </div>
       
     </div>
   )
