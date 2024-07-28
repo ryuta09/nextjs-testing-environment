@@ -13,9 +13,15 @@ const TailwindVariants = () => {
         <Button color='success' size='lg'>success</Button>
       </div>
 
-      <div className=''>
+      <div className='my-4'>
         <p>別のバリアントに依存するバリアントを追加したい場合</p>
         <Button color='success' size='lg' disabled={true}>success</Button>
+      </div>
+
+      <div className='my-4'>
+        <p>複数のバリアントを定義するパターン</p>
+        <Button color='secondary' size='lg' disabled={true}>success</Button>
+        <Button color='primary' size='lg' disabled={true}>success</Button>
       </div>
     </div>
   )

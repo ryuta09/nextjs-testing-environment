@@ -27,6 +27,11 @@ const buttonStyle = tv({
       color: 'success',
       disabled: true,
       class: 'bg-green-100 text-green-700 dark:text-green-800'
+    },
+    {
+      color: ['primary', 'secondary'],
+      disabled: true,
+      class: 'text-slate-400 bg-slate-200 dark:bg-slate-800 opacity-100'
     }
   ],
   defaultVariants: {
