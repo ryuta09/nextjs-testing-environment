@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../components/Button'
+import Alert from '../components/Alert'
 
 const TailwindVariants = () => {
   return (
@@ -29,6 +30,9 @@ const TailwindVariants = () => {
         <Button color={{initial: 'primary', sm: 'success', md:'secondary'}} size={{initial: 'sm', sm: 'md', md: 'lg'}}>success</Button>
         <Button color={{initial: 'secondary', sm: 'success', md:'primary'}} size={{initial: 'sm', sm: 'md', md: 'lg'}}>success</Button>
       </div>
+
+      <Alert severity="success" variant="filled" />
+      
     </div>
   )
 }
