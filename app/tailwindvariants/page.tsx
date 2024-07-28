@@ -23,6 +23,12 @@ const TailwindVariants = () => {
         <Button color='secondary' size='lg' disabled={true}>success</Button>
         <Button color='primary' size='lg' disabled={true}>success</Button>
       </div>
+
+      <div className='my-4'>
+        <p>responsiveVariantsでレスポンシブ対応を定義</p>
+        <Button color={{initial: 'primary', sm: 'success', md:'secondary'}} size={{initial: 'sm', sm: 'md', md: 'lg'}}>success</Button>
+        <Button color={{initial: 'secondary', sm: 'success', md:'primary'}} size={{initial: 'sm', sm: 'md', md: 'lg'}}>success</Button>
+      </div>
     </div>
   )
 }
