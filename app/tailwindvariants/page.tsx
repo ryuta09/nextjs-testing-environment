@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../components/Button'
 import Alert from '../components/Alert'
+import ReponseSlot from '../components/ReponseSlot'
 
 const TailwindVariants = () => {
   return (
@@ -32,6 +33,9 @@ const TailwindVariants = () => {
       </div>
 
       <Alert severity="success" variant="filled" />
+
+      <ReponseSlot color='secondary' />
+      <ReponseSlot color='primary' />
       
     </div>
   )
