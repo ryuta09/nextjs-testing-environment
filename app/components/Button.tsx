@@ -5,12 +5,13 @@ const buttonStyle = tv({
   base: "font-medium bg-blue-500 text-white rounded-full active:opacity-80",
   variants: {
     color: {
-      primary: "bg-blue-500 text-white",
-      secondary: "bg-purple-500 text-white",
+      primary: "bg-blue-500 text-white hover:bg-blue-700",
+      secondary: "bg-purple-500 text-white hover:bg-purple-700",
+      success: "bg-green-500 hover:bg-green-700",
     },
     size: {
-      sm: "text-sm",
-      md: "text-base",
+      sm: "text-sm px-2 px-1",
+      md: "text-base px-3 px-2",
       lg: "px-4 py-3 text-lg",
     },
   },
