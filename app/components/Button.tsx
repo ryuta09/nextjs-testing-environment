@@ -10,8 +10,8 @@ const buttonStyle = tv({
       success: "bg-green-500 hover:bg-green-700",
     },
     size: {
-      sm: "text-sm px-2 px-1",
-      md: "text-base px-3 px-2",
+      sm: "text-sm",
+      md: "text-base",
       lg: "px-4 py-3 text-lg",
     },
     disabled: {
@@ -23,6 +23,11 @@ const buttonStyle = tv({
       size: ["sm", "md"],
       class: "px-3 py-1",
     },
+    {
+      color: 'success',
+      disabled: true,
+      class: 'bg-green-100 text-green-700 dark:text-green-800'
+    }
   ],
   defaultVariants: {
     size: "md",
