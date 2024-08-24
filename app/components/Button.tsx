@@ -48,10 +48,11 @@ type ButtonVariants = VariantProps<typeof buttonStyle>;
 
 interface ButtonProps extends ButtonVariants {
   children: React.ReactNode;
+  onClick?: () => void
 }
-const Button = ({ color, size, disabled, children }: ButtonProps) => {
+const Button = ({ color, size, disabled, children, onClick }: ButtonProps) => {
   return (
-    <button className={buttonStyle({ color, size, disabled })}>
+    <button className={buttonStyle({ color, size, disabled })} onClick={onClick}>
       {children}
     </button>
   );
