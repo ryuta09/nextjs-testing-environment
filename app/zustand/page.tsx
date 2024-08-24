@@ -1,8 +1,6 @@
-import React from 'react'
-
 const Zustand = () => {
   return (
-    <div>Zustand</div>
+    <div>zustand</div>
   )
 }
 
