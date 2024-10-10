@@ -1,15 +1,19 @@
+'use client'
+import { useFormStatus } from "react-dom";
+import { formAction } from "../actions";
+import IncrementButton from "./IncrementButton";
+
 export default function RscPage() {
-  const formAction = async () => {
-    "use server"
-    console.log("server action");
-  }
-  return(
+
+
+
+  return (
     <>
-    <div className="flex  items-center justify-center mt-10">
-      <form action={formAction}>
-        <button className="px-4 py-2 border-2 rounded-md border-red-400">Increment</button>
-      </form>
-    </div>
+      <div className="flex  items-center justify-center mt-10">
+        <form action={formAction}>
+        <IncrementButton />
+        </form>
+      </div>
     </>
-  )
+  );
 }
