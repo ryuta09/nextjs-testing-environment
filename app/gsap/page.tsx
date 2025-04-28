@@ -29,7 +29,7 @@ export default function gsapPractice() {
           <div className="box w-[400px] h-[400px] bg-lightblue"></div>
         </div>
         <div className="page page2  w-full m-0 h-screen flex items-center justify-center bg-blue-500">
-          <h1 className="ml-[90%] text-[40vw] whitespace-nowrap">Code Tips</h1>
+          <h1 className="ml-[95%] text-[40vw] whitespace-nowrap">Code Tips</h1>
         </div>
         <div className="page page3 bg-black w-full h-screen flex items-center justify-center">
           {" "}
