@@ -18,24 +18,10 @@ export default function stagger() {
         // axis: "y"
       },
     });
-
-    gsap.to('.box-keyframes', {
-      keyframes: [
-        {
-          y: 0,
-          x: 0,
-        },
-        {
-          y: 100,
-          x: 100,
-          duration: 1,
-        }
-      ]
-    })
   })
   return (
     <>
-      <ul className="max-w-[800px] mx-auto mt-[300px] gap-5 w-full flex flex-wrap">
+      <ul className="max-w-[800px] mx-auto mt-[200px] gap-5 w-full flex flex-wrap">
         <li className="box opacity-0 invisible w-52 h-52 bg-green-400"></li>
         <li className="box opacity-0 invisible w-52 h-52 bg-green-400"></li>
         <li className="box opacity-0 invisible w-52 h-52 bg-green-400"></li>
@@ -43,8 +29,6 @@ export default function stagger() {
         <li className="box opacity-0 invisible w-52 h-52 bg-green-400"></li>
         <li className="box opacity-0 invisible w-52 h-52 bg-green-400"></li>
       </ul>
-
-      <div className="box-keyframes w-52 h-52 bg-slate-600"></div>
     </>
 
   )
